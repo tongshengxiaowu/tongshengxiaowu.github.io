@@ -69,6 +69,13 @@ gitalk:
   admin: tongshengxiaowu
   distractionFreeMode: true #是否启用类似FB的阴影遮罩
 
+# Valine
+valine:
+  enable: true    #是否开启Valine评论
+  app_id: mg600h11hk2jIhCNuSvMj0kl-gzGzoHsz
+  app_key: kEiQaNUMYkHA6dotxzhGbmnH
+  placeholder: "Just go go"
+  visitor: true
 
 # # 统计
 
