@@ -88,13 +88,15 @@ layout: default
                 <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
                 <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
                 <script>
-                    new Valine({
+                    try {
+		        new Valine({
                         el: '#comments',
                         app_id: '{{site.valine.app_id}}',
-                        app_key: '{{site.vline.app_key}}',
+                        app_key: '{{site.valine.app_key}}',
                         placeholder: '{{site.valine.placeholder}}',
                         visitor: true,
-                    });
+                       });
+		    }catch(e){ console.log(e) }
                 </script>
                 {% endif %}
                 <!-- Valine end -->
